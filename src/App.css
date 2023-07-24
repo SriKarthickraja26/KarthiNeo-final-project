@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+}
+main {
+  padding: 10px;
+}
+
+.title {
+  padding-left: 3rem;
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  background: rgb(0, 7, 61);
+  color: white;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars {
+  width: 30px;
+}
+.hide {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 30px;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+
+  color: white;
+}
+
+.buttons{
+  /* position: fixed; */
+  /* display:contents; */
+  justify-content:"flex-end",
+}
+
+/* LogoName.css */
+.logo-name-container {
+  display: flex;
+  margin-left: -3rem;
+  right: 20;
+  padding-right: 60rem;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Set the initial width of the logo */
+  height: auto;
+  right: 20;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 24px; /* Set the initial font size for the name */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust the logo size and name font size for smaller screens */
+  .logo {
+    width: 40px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for even smaller screens */
+  .header{
+    max-width:100%;
+  }
+  .logo {
+    width: 30px;
+    margin-left: 10%;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .header{
+    left:10rem;
+    display:flex;
+    position: absolute;
+    /* justify-content: ; */
+  }
+}
+
+
+/* SearchBar.css */
+.search-container {
+  position:relative;
+  display:flex;
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.right{
+  display: flex;
+  margin-left: -18rem;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  outline: none;
+  background-color: transparent;
+}
+.head-icon{
+  padding: 5px;
+}
+.search-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+.routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
