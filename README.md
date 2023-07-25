@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+
 Sonar Status: [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SriKarthickraja26_KarthiNeo-final-project&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SriKarthickraja26_KarthiNeo-final-project)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
